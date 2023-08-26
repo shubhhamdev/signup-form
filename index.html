@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sign UP</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-left">
+        <p class="logo">Header</p>
+      </div>
+      <div class="header-right">
+        <a href="#" class="signup">Signup</a>
+        <a href="#" class="profile">Profile</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="form-heading">Signup</div>
+      <div class="name-input input-container">
+        <input
+          type="text"
+          name="name"
+          id="nameInput"
+          placeholder=" "
+          required
+        />
+        <label for="name">Name </label>
+      </div>
+      <div class="email-input input-container">
+        <input
+          type="email"
+          name="email"
+          id="emailInput"
+          placeholder=" "
+          required
+        />
+        <label for="email">email </label>
+      </div>
+      <div class="password-input input-container">
+        <input
+          type="password"
+          name="password"
+          id="passwordInput"
+          placeholder=" "
+          required
+        />
+        <label for="password">Password </label>
+      </div>
+      <div class="password-input input-container">
+        <input
+          type="password"
+          name="password"
+          id="conPasswordInput"
+          placeholder=" "
+          required
+        />
+        <label for="password">Confirm Password </label>
+      </div>
+      <div class="error">Error : All the fields are mandatory</div>
+      <div class="Cont-error">
+        Error : Password and Confirm Password is Diffrent
+      </div>
+      <div class="Cont-error email-incorrect">Error : Enter valid Email</div>
+      <div class="success">Successfully Signed Up!</div>
+      <button class="signUpBtn">Signup</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
