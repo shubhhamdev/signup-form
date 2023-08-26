@@ -21,7 +21,7 @@ if (localStorage.getItem("accessToken")) {
     password = userDetails.password;
     updateInfo();
 } else {
-    window.location.href = "../index.html";
+    window.location.href = "index.html";
 }
 
 
@@ -36,7 +36,7 @@ function updateInfo() {
 logOutBtn.addEventListener("click", () => {
     localStorage.setItem("userDetails", null);
     localStorage.removeItem("accessToken");
-    window.location.href = "../index.html";
+    window.location.href = "index.html";
 
 
     // Removing unnessasary event listerners
